@@ -166,8 +166,6 @@
   background-image: url(king_image.jpg);
   background-size: cover;
   height: 308px;
-  margin-left: 10px;
-  margin-right: 10px;
   color: white;
 }
 .hero-message {
@@ -269,9 +267,6 @@
 }
 /* footer-nav */
 /* button of back to top */
-.footer-nav {
-  height: 1020px;
-}
 .back-to-top {
   height: 50px;
   background-color: #37475a;
@@ -318,18 +313,18 @@
 .footer-logo {
   background-image: url(logo.png);
   background-size: cover;
-  height: 60px;
-  width: 160px;
-  margin-right: 100px;
+  height: 7vw;
+  width: 20%;
+  margin-right: 3%;
 }
 .button-english {
-  width: 130px;
+  width: 10vw;
 }
 .button-doller {
-  width: 160px;
+  width: 12vw;
 }
 .button-united-state {
-  width: 150px;
+  width: 12vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -339,7 +334,7 @@
   background-size: cover;
   height: 12px;
   width: 18px;
-  margin-right: 5px;
+  margin-right: 2%;
 }
 .common-in-extra {
   margin-right: 8px;
@@ -352,57 +347,50 @@
   color: rgb(170, 163, 163);
 }
 /* footer part 2 */
-
+.header-moreinfo-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer-part2 {
   background-color: #131a22;
   height: 470px;
-}
-.header-moreinfo-table {
   align-items: center;
+  justify-content: center;
 }
 .table-body {
-  margin-left: 250px;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.table-row {
   margin-top: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+}
+.table-row {
+  display: flex;
   justify-content: space-around;
-  height: 80px;
 }
 .table-row td {
-  width: 125px;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: row;
+  width: 9vw;
+  line-height: 90%;
 }
 .table-body a {
   text-decoration: none;
   color: rgb(170, 163, 163);
-  font-size: 12px;
+  font-size: 12px !important;
 }
 .table-body p {
-  font-size: 12px;
+  font-size: 12px !important;
   color: #dddddd;
-}
-.last-row {
-margin-left: 145px;
-margin-right: 140px;
 }
 
 /* copy rights botom */
 .botom {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .botom a {
   text-decoration: none;
   color: rgb(170, 163, 163);
   font-size: 13px;
   font-weight: 600;
-  margin-left: 13px;
+  /* margin-left: 13p   x; */
 }
