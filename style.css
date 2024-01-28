@@ -4,6 +4,9 @@
   border: border-box;
 }
 /* navbar */
+/* body{
+  width:100vw;
+} */
 .nevbar {
   height: 60px;
   background-color: #0f1111;
@@ -15,12 +18,12 @@
 /* box1 */
 .nav-logo {
   height: 50px;
-  width: 140px;
+  width: 10vw;
 }
 .logo {
   background-image: url(logo.png);
-  height: 50px;
-  width: 100%;
+  background-position: center;
+  height: 48px;
   background-size: cover;
 }
 /* hover  */
@@ -36,7 +39,7 @@
 .add-first {
   color: #cccccc;
   font-size: 0.85rem;
-  margin-left: 15px;
+  margin-left: 1rem;
 }
 .add-sec {
   font-size: 1rem;
@@ -48,7 +51,7 @@
 }
 /* box3 */
 .nav-search {
-  width: 900px;
+  width: 55vw;
   height: 40px;
   display: flex;
   justify-content: space-evenly;
@@ -69,7 +72,7 @@
   border: none;
 }
 .search-icon {
-  width: 50px;
+  width: 3.5vw;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -82,7 +85,7 @@
 /* box4 */
 .nav-flag {
   margin-left: 10px;
-  width: 70px;
+  width: 4.5vw;
   height: 40px;
   border: none;
   display: flex;
@@ -90,9 +93,9 @@
 .flag {
   background-image: url(flag.jpeg);
   background-size: cover;
+  background-position: center;
   height: 16px;
-  width: 21px;
-  border: none;
+  width: 22px;
   position: relative;
   top: 20px;
 }
@@ -173,7 +176,7 @@
   color: black;
   height: 40px;
   width: 97.4%;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,33 +206,36 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #e2e7e6;
+  flex-grow: 1;
 }
 .contant-box {
-  height: 28rem;
+  height: auto;
   background-color: white;
-  width: 22.5%;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline ;
 }
 .products-type {
   margin: 1rem 0px 0px 1rem;
+  font-size: 1.1vw;
   color: #0f1111;
 }
-.shop-now {
-  position: relative;
-  left: 1rem;
-  top: 0.75rem;
-}
+ .shop-now{
+  margin: .5rem 1rem .5rem 1rem;
+ }
 .shop-now a {
   color: #007185;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 1vw;
 }
 .image {
   background-size: cover;
   background-position: center;
-  height: 22rem;
   margin: 0.75rem 1rem 0px 1rem;
+  height: 20vw;
+  width: 20vw;
 }
 
 /* last margin */
@@ -372,7 +378,7 @@
 }
 .table-row td {
   width: 7.5rem;
-  line-height: 90%;
+  line-height: 80%;
 }
 .table-body a {
   text-decoration: none;
