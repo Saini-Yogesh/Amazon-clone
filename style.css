@@ -4,9 +4,10 @@
   border: border-box;
 }
 /* navbar */
-/* body{
-  width:100vw;
-} */
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
 .nevbar {
   height: 60px;
   background-color: #0f1111;
@@ -140,7 +141,7 @@
   margin-right: 5px;
 }
 
-/* nav-shop */
+/*<----------------- nav-shop -------------->*/
 .panal {
   background-color: #232f3e;
   height: 40px;
@@ -164,7 +165,7 @@
   display: flex;
   font-size: 0.85rem;
 }
-/* hero section */
+/*<----------------- hero-section -------------->*/
 .hero-section {
   background-image: url(king_image.jpg);
   background-size: cover;
@@ -175,14 +176,14 @@
   background-color: #f5f6f6;
   color: black;
   height: 40px;
-  width: 97.4%;
-  /* margin-left: 20px; */
+  width: 98%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.85rem;
   position: relative;
   top: 250px;
+  left: 1%;
 }
 .hero-message a {
   text-decoration: none;
@@ -200,7 +201,7 @@
   top: 190px;
   right: 15px;
 }
-/* contant */
+/*<----------------- main-contant -------------->*/
 .contant {
   display: flex;
   flex-wrap: wrap;
@@ -215,16 +216,16 @@
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: baseline ;
+  justify-content: baseline;
 }
 .products-type {
   margin: 1rem 0px 0px 1rem;
   font-size: 1.1vw;
   color: #0f1111;
 }
- .shop-now{
-  margin: .5rem 1rem .5rem 1rem;
- }
+.shop-now {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
 .shop-now a {
   color: #007185;
   text-decoration: none;
@@ -238,7 +239,7 @@
   width: 20vw;
 }
 
-/* last margin */
+/*<------------- .last-containoer ----------->*/
 .last-containoer {
   height: 150px;
 }
@@ -274,8 +275,9 @@
   font-size: 11px;
   margin-top: 2px;
 }
-/* footer-nav */
-/* button of back to top */
+/*<----------------- footer-nav -------------->*/
+
+/*<----------------- Back-to-top -------------->*/
 .back-to-top {
   height: 50px;
   background-color: #37475a;
@@ -285,10 +287,9 @@
   justify-content: space-evenly;
   font-size: 0.8rem;
 }
-/* foote part 1 */
+/*<----------------- footer-part 1 -------------->*/
 .footer-part1 {
-  height: 100%;
-  width: 100%;
+  width: 100vw;
   background-color: #222f3d;
   display: flex;
   justify-content: center;
@@ -310,7 +311,7 @@
   font-size: 1rem;
   font-weight: 700;
 }
-/* footer-extra */
+/*<----------------- footer-extra -------------->*/
 .footer-extra {
   height: 120px;
   background-color: #222f3d;
@@ -355,7 +356,7 @@
   border: 0.1px solid rgb(170, 163, 163);
   color: rgb(170, 163, 163);
 }
-/* footer part 2 */
+/*<----------------- footer-part 2 -------------->*/
 .header-moreinfo-table {
   display: flex;
   align-items: center;
@@ -377,7 +378,7 @@
   justify-content: space-around;
 }
 .table-row td {
-  width: 7.5rem;
+  width: 8.5rem;
   line-height: 80%;
 }
 .table-body a {
@@ -390,7 +391,7 @@
   color: #dddddd;
 }
 
-/* copy rights botom */
+/*<----------------- copy-right-botom -------------->*/
 .botom {
   text-align: center;
   margin-top: 1.5rem;
