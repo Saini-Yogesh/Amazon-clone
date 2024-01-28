@@ -218,7 +218,7 @@
 .shop-now {
   position: relative;
   left: 1rem;
-  top: .75rem;
+  top: 0.75rem;
 }
 .shop-now a {
   color: #007185;
@@ -229,7 +229,7 @@
   background-size: cover;
   background-position: center;
   height: 22rem;
-  margin: .75rem 1rem 0px 1rem;
+  margin: 0.75rem 1rem 0px 1rem;
 }
 
 /* last margin */
@@ -357,12 +357,11 @@
 }
 .footer-part2 {
   background-color: #131a22;
-  height: 470px;
   align-items: center;
   justify-content: center;
 }
 .table-body {
-  margin-top: 20px;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -372,28 +371,28 @@
   justify-content: space-around;
 }
 .table-row td {
-  width: 9vw;
+  width: 7.5rem;
   line-height: 90%;
 }
 .table-body a {
   text-decoration: none;
   color: rgb(170, 163, 163);
-  font-size: 12px !important;
+  font-size: 0.7rem;
 }
 .table-body p {
-  font-size: 12px !important;
+  font-size: 0.7rem;
   color: #dddddd;
 }
 
 /* copy rights botom */
 .botom {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 .botom a {
   text-decoration: none;
   color: rgb(170, 163, 163);
   font-size: 13px;
   font-weight: 600;
-  /* margin-left: 13p   x; */
 }
