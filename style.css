@@ -3,11 +3,12 @@
   font-family: Arial;
   border: border-box;
 }
-/* navbar */
 body {
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
 }
+/*<------------ navbar ----------->*/
+
 .nevbar {
   height: 60px;
   background-color: #0f1111;
@@ -169,7 +170,9 @@ body {
 .hero-section {
   background-image: url(king_image.jpg);
   background-size: cover;
-  height: 308px;
+  background-position: center;
+  height: 40vw;
+  width: 100%;
   color: white;
 }
 .hero-message {
@@ -189,18 +192,16 @@ body {
   text-decoration: none;
   color: #007185;
 }
-.leftarrow {
-  font-size: 3rem;
-  position: absolute;
-  top: 190px;
-  left: 15px;
+.hero-arrow {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1%;
+  margin-left: 1%;
+  position: relative;
+  top: 7vw;
 }
-.rightarrow {
-  font-size: 3rem;
-  position: absolute;
-  top: 190px;
-  right: 15px;
-}
+
 /*<----------------- main-contant -------------->*/
 .contant {
   display: flex;
@@ -237,6 +238,10 @@ body {
   margin: 0.75rem 1rem 0px 1rem;
   height: 20vw;
   width: 20vw;
+}
+.contant-and-footern {
+  position: relative;
+  top: -20vw;
 }
 
 /*<------------- .last-containoer ----------->*/
@@ -289,7 +294,7 @@ body {
 }
 /*<----------------- footer-part 1 -------------->*/
 .footer-part1 {
-  width: 100vw;
+  width: 100%;
   background-color: #222f3d;
   display: flex;
   justify-content: center;
@@ -359,13 +364,12 @@ body {
 /*<----------------- footer-part 2 -------------->*/
 .footer-part2 {
   background-color: #131a22;
-  align-items: center;
-  justify-content: center;
 }
 .header-moreinfo-table {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: nowrap;
 }
 .table-body {
   margin-top: 2rem;
@@ -373,12 +377,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.table-row {
-  display: flex;
-  justify-content: space-around;
-}
 .table-row td {
-  width: 8.5rem;
+  padding: 5px;
+  width: 8rem;
   line-height: 80%;
 }
 .table-body a {
@@ -389,6 +390,35 @@ body {
 .table-body p {
   font-size: 0.7rem;
   color: #dddddd;
+}
+table a:hover {
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .table-body a {
+    font-size: 0.5rem;
+  }
+
+  .table-body p {
+    font-size: 0.5rem;
+  }
+  .table-row td {
+    width: 7.5rem;
+    line-height: 70%;
+  }
+}
+@media  (max-width: 480px) {
+  .table-body a {
+    font-size: 0.4rem;
+  }
+
+  .table-body p {
+    font-size: 0.4rem;
+  }
+  .table-row td {
+    width: 6.5rem;
+    line-height: 50%;
+  }
 }
 
 /*<----------------- copy-right-botom -------------->*/
