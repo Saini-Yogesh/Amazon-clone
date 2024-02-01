@@ -201,7 +201,11 @@ body {
   position: relative;
   top: 7vw;
 }
-
+/* main ans footer container */
+.contant-and-footern {
+  position: relative;
+  top: -20vw;
+}
 /*<----------------- main-contant -------------->*/
 .contant {
   display: flex;
@@ -239,11 +243,6 @@ body {
   height: 20vw;
   width: 20vw;
 }
-.contant-and-footern {
-  position: relative;
-  top: -20vw;
-}
-
 /*<------------- .last-containoer ----------->*/
 .last-containoer {
   height: 150px;
@@ -372,15 +371,15 @@ body {
   flex-flow: nowrap;
 }
 .table-body {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .table-row td {
-  padding: 5px;
+  padding: 0 5px;
   width: 8rem;
-  line-height: 80%;
+  line-height: 70%;
 }
 .table-body a {
   text-decoration: none;
@@ -393,8 +392,9 @@ body {
 }
 table a:hover {
   color: #ffffff;
+  text-decoration: underline;
 }
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .table-body a {
     font-size: 0.5rem;
   }
@@ -404,10 +404,10 @@ table a:hover {
   }
   .table-row td {
     width: 7.5rem;
-    line-height: 70%;
+    line-height: 50%;
   }
 }
-@media  (max-width: 480px) {
+@media (max-width: 550px) {
   .table-body a {
     font-size: 0.4rem;
   }
@@ -416,16 +416,29 @@ table a:hover {
     font-size: 0.4rem;
   }
   .table-row td {
+    width: 7rem;
+    line-height: 40%;
+  }
+}
+@media (max-width: 400px) {
+  .table-body a {
+    font-size: 0.3rem;
+  }
+
+  .table-body p {
+    font-size: 0.3rem;
+  }
+  .table-row td {
     width: 6.5rem;
-    line-height: 50%;
+    line-height: 30%;
   }
 }
 
 /*<----------------- copy-right-botom -------------->*/
 .botom {
   text-align: center;
-  margin-top: 1.5rem;
-  padding-bottom: 1rem;
+  margin-top: 2rem;
+  padding-bottom: 1.5rem;
 }
 .botom a {
   text-decoration: none;
