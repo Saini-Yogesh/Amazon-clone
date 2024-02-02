@@ -145,33 +145,58 @@ body {
 /*<----------------- nav-shop -------------->*/
 .panal {
   background-color: #232f3e;
-  height: 40px;
-  display: flex;
-  justify-content: space-evenly;
   color: white;
+  height: 2.5rem;
+  display: flex;
   align-items: center;
 }
 .panal-all {
-  width: 60px;
-  margin-left: 20px;
+  width: 3rem;
   font-size: 1rem;
   font-weight: 700;
+  padding: 0.5rem 0.5rem 0.5rem 1.2rem;
 }
 .panal-ops p {
-  display: inline;
-  margin-right: 15px;
+  display: inline-block;
+  padding: 0.5rem;
 }
 .panal-ops {
-  width: 97%;
-  display: flex;
+  width: auto;
   font-size: 0.85rem;
+}
+@media (max-width: 600px) {
+  .panal p,
+  .panal-all {
+    font-size: 0.7rem;
+  }
+  .panal {
+    height: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .panal p,
+  .panal-all {
+    font-size: 0.5rem;
+  }
+  .panal {
+    height: 1.5rem;
+  }
+}
+@media (max-width: 380px) {
+  .panal p,
+  .panal-all {
+    font-size: 0.3rem;
+  }
+  .panal {
+    height: 1rem;
+  }
 }
 /*<----------------- hero-section -------------->*/
 .hero-section {
   background-image: url(king_image.jpg);
   background-size: cover;
-  background-position: center;
-  height: 40vw;
+  /* background-position: center; */
+  height: 23vw;
   width: 100%;
   color: white;
 }
@@ -184,7 +209,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 0.85rem;
-  position: relative;
+  position: absolute;
   top: 250px;
   left: 1%;
 }
@@ -212,7 +237,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #e2e7e6;
-  flex-grow: 1;
 }
 .contant-box {
   height: auto;
@@ -221,15 +245,14 @@ body {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
 }
 .products-type {
-  margin: 1rem 0px 0px 1rem;
+  padding: 1rem 0px 0px 1rem;
   font-size: 1.1vw;
   color: #0f1111;
 }
 .shop-now {
-  margin: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.8rem 0px 0.8rem 1rem;
 }
 .shop-now a {
   color: #007185;
@@ -245,14 +268,13 @@ body {
 }
 /*<------------- .last-containoer ----------->*/
 .last-containoer {
-  height: 150px;
+  height: 10rem;
 }
 .containoer-border {
   height: 125px;
-  border: 2px solid rgb(235, 220, 220);
-  margin: 40px 0px 20px;
-  border-radius: 5px;
-  text-align: center;
+  border-top: 2px solid rgb(235, 220, 220);
+  border-bottom: 2px solid rgb(235, 220, 220);
+  margin: 2.5rem 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -263,20 +285,20 @@ body {
   text-decoration: none;
 }
 .containoer-border button {
-  width: 230px;
-  height: 28px;
+  width: 15rem;
+  height: 1.9rem;
   background-color: #ffcc00;
   border-radius: 5px;
   color: #000000;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 .containoer-border-p1 {
-  font-size: 13px;
+  font-size: 0.85rem;
   margin-bottom: 2px;
 }
 .containoer-border-p2 {
-  font-size: 11px;
+  font-size: 0.8rem;
   margin-top: 2px;
 }
 /*<----------------- footer-nav -------------->*/
@@ -304,6 +326,7 @@ body {
   flex-direction: column;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  padding: 5px;
 }
 .footer-info a {
   text-decoration: none;
