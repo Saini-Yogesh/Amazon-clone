@@ -10,7 +10,8 @@ body {
 /*<------------ navbar ----------->*/
 
 .nevbar {
-  height: 60px;
+  /* height: 60px; */
+  padding: 5px;
   background-color: #0f1111;
   color: white;
   display: flex;
@@ -19,7 +20,7 @@ body {
 }
 /* box1 */
 .nav-logo {
-  height: 50px;
+  height: 5vw;
   width: 10vw;
 }
 .logo {
@@ -32,12 +33,15 @@ body {
 .border {
   border: 1.5px solid transparent;
 }
-
 .border :hover {
   border: 1.5px solid white;
 }
 
 /* box2 */
+.nav-address{
+  display: flex;
+  flex-direction: column;
+}
 .add-first {
   color: #cccccc;
   font-size: 0.85rem;
@@ -141,20 +145,49 @@ body {
   font-weight: 700;
   margin-right: 5px;
 }
+@media(max-width: 400px) {
+  /* Adjustments for small screens */
+  .nav-logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .add-first {
+    font-size: 0.7rem;
+  }
+
+  .search-input {
+    padding: 0 8px; /* Adjust padding */
+  }
+
+  .nav-cart i {
+    font-size: 20px; /* Adjust size */
+  }
+
+  .nav-signin,
+  .order-return {
+    display: block; /* Show on small screens */
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Adjustments for medium screens */
+  .nav-search {
+    max-width: none; /* Remove max-width */
+  }
+}
 
 /*<----------------- nav-shop -------------->*/
-.panal {
+.panal-ops {
   background-color: #232f3e;
   color: white;
   display: flex;
   align-items: center;
 }
 .panal-all {
-  width: 3rem;
-  font-size: 1rem;
   font-weight: 700;
-  padding: 0.7rem 0.5rem 0.7rem 1.2rem;
-  display: inline-block;
+  padding-left: 1vw;
 }
 .panal-ops p {
   display: inline-block;
@@ -165,41 +198,28 @@ body {
   font-size: 0.85rem;
 }
 @media (max-width: 700px) {
-  .panal p,
-  .panal-all {
+  .panal-ops p{
     font-size: 0.7rem;
     padding: 0.5rem 0.3rem 0.5rem .5rem;
   }
-  .panal-all{
-    width: 2.2rem;
-  }
 }
 @media (max-width: 500px) {
-  .panal p,
-  .panal-all {
+  .panal-ops p {
     font-size: 0.5rem;
     padding: 0.3rem 0.2rem 0.3rem .5rem;
   }
-  .panal-all{
-    width: 1.2rem;
-  }
 }
 @media (max-width: 400px) {
-  .panal p,
-  .panal-all {
+  .panal p {
     font-size: 0.4rem;
     padding: 0.2rem 0.1rem 0.2rem .3rem;
-  }
-  .panal-all{
-    width: 1rem;
   }
 }
 /*<----------------- hero-section -------------->*/
 .hero-section {
   background-image: url(king_image.jpg);
   background-size: cover;
-  /* background-position: center; */
-  height: 23vw;
+  height: 18vw;
   width: 100%;
   color: white;
 }
